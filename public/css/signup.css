@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+:root{--accent:#16a34a;--accent-dark:#15803d;--muted:#6b7280}
+body{font-family:'Poppins',system-ui,Segoe UI,Roboto,Arial,sans-serif;background:linear-gradient(180deg,#fbfdff,#f6fbf7);color:#0f172a;margin:0}
+.signup-wrapper{max-width:720px;margin:60px auto;padding:30px;background:linear-gradient(180deg,rgba(255,255,255,0.85),rgba(255,255,255,0.8));backdrop-filter:blur(6px);border-radius:14px;box-shadow:0 18px 40px rgba(2,6,23,.06)}
+.signup-wrapper h2{text-align:center;margin-bottom:10px;color:#0b2545;font-weight:600}
+.form{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.form-row{display:flex;gap:12px}
+label{font-size:0.9rem;color:#334155}
+input[type="text"],input[type="password"],input[type="email"]{width:100%;padding:12px;border:1px solid #e6eef6;border-radius:10px;transition:box-shadow .15s ease,border-color .15s ease}
+input:focus{border-color:var(--accent);box-shadow:0 8px 24px rgba(22,163,74,.08)}
+.full{grid-column:1/-1}
+button.btn{width:100%;padding:12px;border-radius:10px;border:none;background:linear-gradient(90deg,var(--accent),var(--accent-dark));color:#fff;font-weight:700;cursor:pointer}
+button.btn:hover{filter:brightness(.95)}
+.note{font-size:0.9rem;color:var(--muted);margin-top:8px}
+@media (max-width:780px){.form{grid-template-columns:1fr}.signup-wrapper{padding:20px}}

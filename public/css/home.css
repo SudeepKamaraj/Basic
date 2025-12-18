@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+:root{--bg1:#eef2ff;--bg2:#f6f9ff;--accent:#2563eb;--muted:#6b7280;--card:#ffffff}
+body{font-family:'Poppins',system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;background:linear-gradient(180deg,var(--bg1),var(--bg2));color:#0f172a;margin:0;-webkit-font-smoothing:antialiased}
+.container{max-width:1100px;margin:56px auto;padding:36px;background:linear-gradient(180deg,rgba(255,255,255,0.7),rgba(255,255,255,0.6));backdrop-filter:blur(6px);border-radius:14px;box-shadow:0 12px 30px rgba(2,6,23,.08)}
+h1,h2{color:var(--accent);text-align:center;margin:6px 0}
+.home-hero{padding:48px 20px;text-align:center}
+.home-hero p{color:var(--muted);max-width:720px;margin:12px auto 0;line-height:1.6}
+.cta{display:inline-flex;gap:12px;margin-top:20px}
+.btn{padding:12px 18px;border-radius:10px;border:none;font-weight:600;cursor:pointer;box-shadow:0 8px 20px rgba(37,99,235,.12)}
+.btn-primary{background:linear-gradient(90deg,var(--accent),#1e40af);color:#fff}
+.btn-outline{background:transparent;border:2px solid rgba(37,99,235,.12);color:var(--accent)}
+.home-features{display:flex;gap:22px;flex-wrap:wrap;justify-content:center;margin-top:28px}
+.card{background:var(--card);border-radius:12px;padding:22px;box-shadow:0 10px 30px rgba(2,6,23,.06);min-width:240px;transition:transform .25s ease,box-shadow .25s ease}
+.card:hover{transform:translateY(-6px);box-shadow:0 20px 40px rgba(2,6,23,.09)}
+.card h3{margin:0 0 8px;color:#0b2238}
+.card p{margin:0;color:var(--muted);font-size:0.95rem}
+@media (max-width:720px){.container{margin:24px;padding:20px}.home-features{gap:14px}}
